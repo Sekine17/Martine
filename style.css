@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Karma:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+#sea{
+    background: url('img/bg.png') center/cover;
+    height: 100vh;  /*burada duzelis etmek lazim olacaq unutma!!!!!!!!!!!*/
+}
+.text-narinci {
+    color: #fe5c24 !important;
+}
+
+.text-mavi {
+    color: #0c3e72;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+#header-top {
+    background-color: #eaefff;
+}
+
+.h-top2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.Destinations {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    a {
+        color: #0c3e72;
+    }
+}
+
+.icons {
+    display: flex;
+    gap: 30px;
+}
+
+.elaqe {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.mobile {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+
+.navbar i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.desktop{
+    display: none;
+}
+
+/*desktop hissesi basladi*/
+@media screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .navbar-desk{
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .book-know{
+        padding: 20px 35px;
+        color: white;
+        background-color:#fe5c24;
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    ul li a{
+        color: #0c3e72;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 830px) {
+    .icon-4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .book-know{
+        display:none ;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .elaqe {
+        display: none;
+    }
+
+    .Destinations {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .Destinations {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 0;
+        gap: 10px;
+
+        a {
+            color: #0c3e72;
+        }
+    }
+}
