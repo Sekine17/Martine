@@ -12,10 +12,13 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
 }
-#sea{
+
+#sea {
     background: url('img/bg.png') center/cover;
-    height: 100vh;  /*burada duzelis etmek lazim olacaq unutma!!!!!!!!!!!*/
+    height: 100vh;
+    /*burada duzelis etmek lazim olacaq unutma!!!!!!!!!!!*/
 }
+
 .text-narinci {
     color: #fe5c24 !important;
 }
@@ -80,9 +83,41 @@ body {
     cursor: pointer;
 }
 
-.desktop{
+.desktop {
     display: none;
 }
+
+#sea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+h1 {
+    font-size: 120px;
+}
+
+#sea p {
+    margin-top: 2px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.discover {
+    margin-top: 30px;
+    padding: 24px 80px;
+    background-color: #2493e0;
+    color: white;
+    transition: 0.5s;
+}
+
+.discover:hover {
+    background-color: #fe5c24;
+}
+
+
 
 /*desktop hissesi basladi*/
 @media screen and (min-width: 768px) {
@@ -90,33 +125,46 @@ body {
         width: 80%;
     }
 
-    .mobile{
+    .mobile {
         display: none;
     }
 
-    .navbar-desk{
+    .navbar-desk {
         padding: 30px 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    .book-know{
+    .book-know {
         padding: 20px 35px;
         color: white;
-        background-color:#fe5c24;
+        background-color: #fe5c24;
+        transition: 0.5s;
     }
 
-    ul{
+    .book-know:hover {
+        background-color: #2493e0;
+        ;
+    }
+
+    ul {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 25px;
     }
 
-    ul li a{
+    ul li a {
         color: #0c3e72;
+        transition: 0.2s;
     }
+
+    ul li a:hover {
+        color: #fe5c24;
+    }
+
+
 }
 
 
@@ -154,9 +202,22 @@ body {
 }
 
 @media screen and (max-width: 960px) {
-    .book-know{
-        display:none ;
+    .book-know {
+        display: none;
     }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .discover {
+        margin-top: 30px;
+        background-color: #2493e0;
+        color: white;
+        transition: 0.5s;
+    }
+
+
 }
 
 @media screen and (max-width: 650px) {
