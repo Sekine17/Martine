@@ -393,7 +393,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     gap: 0px;
     width: 100%;
     max-width: 100%;
-    border-bottom: 1px solid #bab5b5;
+    border-bottom: 0px solid #bab5b5;
 }
 
 .top-hotels div h3 {
@@ -499,7 +499,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         max-width: 100%;
     }
 
-
+    .top-hotels div {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        width: 100%;
+        max-width: 100%;
+        border-bottom: 1px solid #bab5b5;
+    }
 }
 
 
