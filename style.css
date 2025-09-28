@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none !important;
     list-style: none;
 }
 
@@ -200,7 +200,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /*top place hissesi basladi*/
 
 .top-place h2,
-p {
+.top-place p {
     text-align: center;
 }
 
@@ -318,6 +318,53 @@ p {
     margin: auto;
     transition: 0.5s;
 }
+
+/*slider basladi*/
+.bg {
+    background: url('img/event_bg.png') center/cover;
+    height: 100vh;
+}
+
+.active {
+    border-bottom: 0px solid #2493e0 !important;
+}
+
+.slider .fa-star {
+    color: #ffc962;
+}
+
+.slider a {
+    background-color: #fe5c24;
+    padding: 15px 30px;
+    color: white;
+    font-size: 16px;
+}
+
+.slider h5 {
+    color: #fe5c24;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.slider h2 {
+    color: #0c3e72;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.slider p {
+    color: #848484;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.slider p span {
+    color: #0c3e72;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*slider bitdi*/
 
 /*desktop hissesi basladi*/
 @media screen and (min-width: 768px) {
@@ -501,6 +548,10 @@ p {
         height: 35px;
         width: 35px;
         font-size: 12px;
+    }
+
+    .bg {
+        height: 120vh;
     }
 }
 
