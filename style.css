@@ -338,6 +338,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding: 15px 30px;
     color: white;
     font-size: 16px;
+    transition: 0.5s;
+}
+
+.slider a:hover {
+    background-color: #2493e0;
 }
 
 .slider h5 {
