@@ -441,7 +441,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .swiper-slide {
     padding: 30px;
-    height: 350px;  
+    height: 350px;
     text-align: center;
     font-size: 18px;
     background: #0e477d;
@@ -452,11 +452,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: white;
 }
 
-.swiper-slide p{
+.swiper-slide p {
     text-align: left;
 }
 
-.swiper-slide .fa-star{
+.swiper-slide .fa-star {
     color: #ffc962;
 }
 
@@ -472,19 +472,164 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: #0c3e72;
 }
 
-.swiper h2{
+.swiper h2 {
     color: #fff;
     font-size: 46px;
     font-weight: 600;
 }
 
-.swiper-slide .fa-star{
+.swiper-slide .fa-star {
     font-size: 15px;
 }
 
-.swiper-slide p:nth-child(2){
+.swiper-slide p:nth-child(2) {
     padding-top: 15px
 }
+
+/*service-imgs img basladi*/
+
+.service-imgs {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    gap: 20px;
+}
+
+.service-imgs h3 {
+    padding-top: 20px;
+    font-size: 24px;
+    color: #0c3e72;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.service-imgs p {
+    color: #a2a2a2;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.service-imgs img {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*service-imgs img basladi*/
+
+/*footer basladi*/
+footer {
+    height: auto;
+    background-color: #162b45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom {
+    height: 15vh;
+    background-color: #08223a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777767;
+}
+
+.footer-bottom span {
+    color: #fe5c24;
+}
+
+.footer-bottom p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.son-3 {
+    padding: 150px 0px!important;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.son-3 h4 {
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.linkler {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.linkler div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.linkler div a {
+    color: white;
+}
+
+.send {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.send input,
+.send button {
+    height: 50px;
+    border: 0;
+}
+
+.send input {
+    background-color: #092742;
+    padding-left: 15px;
+    font-size: 13px;
+    outline: none;
+    color: white;
+    max-width: 100%;
+}
+
+.send button {
+    width: 50px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.column a {
+    padding-bottom: 20px;
+}
+
+.button-send {
+    background-color: #fe5c24;
+    color: white;
+}
+
+#a-reng {
+    color: #fe5c24;
+    ;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+/*footer bitdi*/
 
 /*desktop hissesi basladi*/
 @media screen and (min-width: 768px) {
@@ -564,6 +709,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         max-width: 100%;
         border-bottom: 1px solid #bab5b5;
     }
+
+    .service-imgs {
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .service-imgs img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .son-3 {
+        padding: 0 12px;
+    }
+
 }
 
 
@@ -601,6 +764,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
     .icons {
         margin: auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .son-3 {
+        grid-template-columns: 1fr !important;
+        /* telefon */
     }
 }
 
@@ -642,6 +812,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .hotel-form {
         padding: 20px;
     }
+
+    .service-imgs {
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .son-3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        gap: 40px;
+        padding: 70px 0;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -670,6 +856,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 @media screen and (max-width: 1200px) {
     .top-place h2 {
         font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .service-imgs {
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
 
