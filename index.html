@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/brands.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="style.css">
     <title>Martine</title>
 </head>
@@ -273,10 +275,133 @@
             </div>
         </div>
         <div style="margin-top: 100px;"></div>
+        <div class="What-they-said ">
+            <div class="slider2 container" style="padding: 0;">
+                <div class="swiper mySwiper">
+                    <h2 style="padding-top: 130px; padding-bottom: 50px;">What they said</h2>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></p>
+                            <p>The service was excellent and exceeded all of my expectations. I would definitely
+                                recommend it to others.</p>
+                            <h5>- Emily Carter</h5>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></p>
+                            <p>I am very satisfied with the quality and attention to detail. Everything was handled
+                                professionally.</p>
+                            <h5>- Daniel Smith</h5>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></p>
+                            <p>The design was modern and clean, making it very easy to use. I really appreciate the
+                                simplicity.</p>
+                            <h5>- Olivia Brown</h5>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></p>
+                            <p>It was a wonderful experience working with this team. They delivered everything on time
+                                without issues.</p>
+                            <h5>- Michael Johnson</h5>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></p>
+                            <p>The support was always helpful and friendly. I could ask anything and get a quick
+                                response.</p>
+                            <h5>- Sophia Williams</h5>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></p>
+                            <p>I really liked how smooth and organized the whole process was. The final result was
+                                perfect for me.</p>
+                            <h5>- James Anderson</h5>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></p>
+                            <p>Everything worked just as I wanted. I am happy with the outcome and will definitely
+                                return in the future.</p>
+                            <h5>- Isabella Martinez</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            breakpoints: {
+                // Telefonlar (0px - 640px)
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                // Planşetlər (641px - 1024px)
+                641: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                // Desktop (1025px və yuxarı)
+                1025: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                }
+            }
+        });
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                641: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1025: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }
+        });
     </script>
 </body>
 
