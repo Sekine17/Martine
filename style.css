@@ -369,6 +369,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-weight: 400;
 }
 
+.carousel-item a {
+    text-align: center;
+}
+
 /*slider bitdi*/
 
 /*top hotels basladi*/
@@ -530,7 +534,7 @@ footer {
 }
 
 .footer-bottom {
-    height: 15vh;
+    padding: 30px 10px;
     background-color: #08223a;
     display: flex;
     align-items: center;
@@ -549,7 +553,7 @@ footer {
 }
 
 .son-3 {
-    padding: 150px 0px!important;
+    padding: 100px 0px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
@@ -574,6 +578,14 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.linkler div a {
+    transition: 0.3s;
+}
+
+.linkler div a:hover {
+    color: #fe5c24;
 }
 
 .linkler div a {
@@ -621,12 +633,19 @@ footer {
 
 #a-reng {
     color: #fe5c24;
-    ;
 }
 
 .social-media {
     display: flex;
     gap: 10px;
+}
+
+.social-media .fa-brands{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.social-media .fa-brands:hover{
+    color: #fe5c24;
 }
 
 /*footer bitdi*/
@@ -724,37 +743,10 @@ footer {
     }
 
     .son-3 {
-        padding: 0 12px;
+        padding: 150px 12px;
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media screen and (max-width: 830px) {
@@ -826,7 +818,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 auto;
         gap: 40px;
-        padding: 70px 0;
+        padding: 50px 10px;
     }
 }
 
