@@ -41,7 +41,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px 0;
+    padding: 20px 0!important;
 }
 
 .Destinations {
@@ -50,12 +50,22 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    transition: 0.3s;
 
     a {
         color: #0c3e72;
     }
 }
 
+.Destinations a:hover {
+    color: #fe5c24;
+}
+.icon-4 i{
+    transition: 0.3s;
+}
+.icon-4 i:hover{
+    color: #fe5c24;
+}
 .icons {
     display: flex;
     gap: 30px;
@@ -655,13 +665,17 @@ footer {
     color: #fe5c24;
 }
 
-/*footer bitdi*/
 
+/*footer bitdi*/
+.container {
+    padding: 0;
+}
 /*desktop hissesi basladi*/
 @media screen and (min-width: 768px) {
     .container {
         width: 80%;
         margin: auto;
+        padding: 0;
     }
 
     .mobile {
