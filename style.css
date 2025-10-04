@@ -632,7 +632,7 @@ footer {
 .column {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: white;navbar-desk
 }
 
 .column a {
@@ -792,10 +792,6 @@ footer {
 }
 
 @media screen and (max-width: 960px) {
-    .book-know {
-        display: none;
-    }
-
     h1 {
         font-size: 40px;
         padding: 0 5px;
@@ -873,6 +869,12 @@ footer {
 @media screen and (max-width: 1200px) {
     .top-place h2 {
         font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .book-know {
+        display: none;
     }
 }
 
